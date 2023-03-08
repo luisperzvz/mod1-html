@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Módulo HTML</title>
+        <meta charset="utf-8" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Imágenes</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Ir a inicio</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>PNG, GIF, JPEG (JPG)</h2>
+
+                <ul>
+                    <li>
+                        <h3>PNG</h3>
+                        <p>
+                            Tiene mucha calidad. Es ideal para colores planos.
+                            Además soporta transparencias.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>GIF</h3>
+                        <p>Soporta animaciones.</p>
+                    </li>
+                    <li>
+                        <h3>JPEG (JPG)</h3>
+                        <p>
+                            Mapa de bits. Es un formato ligero, ideal para fotos
+                            realistas o con mucho detalle.
+                        </p>
+                    </li>
+                </ul>
+
+                <img
+                    src="./multimedia/HTML5_Logo.png"
+                    alt="Logo HTML 5"
+                    title="Logo HTML 5"
+                />
+            </section>
+
+            <section>
+                <h2>SVG</h2>
+                <p>
+                    SVG (Scalable Vector Graphics) es un formato vectorial poco
+                    conocido pero muy útil para su uso online por su
+                    flexibilidad y por la capacidad de ofrecer gráficos con
+                    calidad.
+                </p>
+
+                <!-- La primera opción es guardar el archivo svg en una carpeta y referenciar el 
+                <--- el archivo mediante el atributo src de la etiqueta img. -->
+                <img
+                    src="./multimedia/bar.svg"
+                    alt="Icono de una barra de estadísticas"
+                    width="200"
+                />
+
+                <!-- La segunda opción es pegar el código del svg directamente en el html. -->
+                <svg
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#000000"
+                >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <defs>
+                            <path
+                                id="bar-a"
+                                d="M0,8 L1,8 L1,13 L0,13 L0,8 Z M6,0 L7,0 L7,13 L6,13 L6,0 Z M12,9 L13,9 L13,13 L12,13 L12,9 Z"
+                            ></path>
+                            <path
+                                id="bar-c"
+                                d="M2,18 L2,7 C2,5.8954305 2.8954305,5 4,5 L5,5 C6.1045695,5 7,5.8954305 7,7 L7,18 L8,18 L8,2 C8,0.8954305 8.8954305,0 10,0 L11,0 C12.1045695,0 13,0.8954305 13,2 L13,18 L14,18 L14,10 C14,8.8954305 14.8954305,8 16,8 L17,8 C18.1045695,8 19,8.8954305 19,10 L19,18 L21,18 C21.5522847,18 22,18.4477153 22,19 C22,19.5522847 21.5522847,20 21,20 L1,20 C0.44771525,20 0,19.5522847 0,19 C0,18.4477153 0.44771525,18 1,18 L2,18 Z M10,2 L10,18 L11,18 L11,2 L10,2 Z M4,7 L4,18 L5,18 L5,7 L4,7 Z M16,10 L16,18 L17,18 L17,10 L16,10 Z"
+                            ></path>
+                        </defs>
+                        <g
+                            fill="none"
+                            fill-rule="evenodd"
+                            transform="translate(1 2)"
+                        >
+                            <g transform="translate(4 5)">
+                                <mask id="bar-b" fill="#ffffff">
+                                    <use xlink:href="#bar-a"></use>
+                                </mask>
+                                <use fill="#D8D8D8" xlink:href="#bar-a"></use>
+                                <g fill="#FFA0A0" mask="url(#bar-b)">
+                                    <rect
+                                        width="24"
+                                        height="24"
+                                        transform="translate(-5 -7)"
+                                    ></rect>
+                                </g>
+                            </g>
+                            <mask id="bar-d" fill="#ffffff">
+                                <use xlink:href="#bar-c"></use>
+                            </mask>
+                            <use
+                                fill="#000000"
+                                fill-rule="nonzero"
+                                xlink:href="#bar-c"
+                            ></use>
+                            <g fill="#7600FF" mask="url(#bar-d)">
+                                <rect
+                                    width="24"
+                                    height="24"
+                                    transform="translate(-1 -2)"
+                                ></rect>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </section>
+        </main>
+    </body>
+</html>

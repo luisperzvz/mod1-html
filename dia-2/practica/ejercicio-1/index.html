@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Módulo HTML</title>
+    </head>
+    <body>
+        <header>
+            <h1>Survey Form</h1>
+        </header>
+        <main>
+            <form>
+                <!-- Name, email & age. -->
+                <div>
+                    <p>Let us know how we can improve</p>
+                    <ul>
+                        <li>
+                            <label for="name">* Name:</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required
+                            />
+                        </li>
+                        <li>
+                            <label for="email">* Email:</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required
+                            />
+                        </li>
+                        <li>
+                            <label for="age">* Age:</label>
+                            <input
+                                type="number"
+                                id="age"
+                                name="age"
+                                placeholder="Age"
+                                min="0"
+                                max="100"
+                                required
+                            />
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Current role. -->
+                <div>
+                    <label>Which option best describe your current role?</label>
+                    <select id="role" name="role">
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                    </select>
+                </div>
+
+                <!-- Recommed. -->
+                <div>
+                    <p>
+                        * How likely is that you would recommend our bootcamp to
+                        a friend?
+                    </p>
+                    <ul>
+                        <li>
+                            <input
+                                type="radio"
+                                id="definitely"
+                                name="recommend"
+                                required
+                            />
+                            <label for="definitely">Definitely</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="maybe" name="recommend" />
+                            <label for="maybe">Maybe</label>
+                        </li>
+                        <li>
+                            <input
+                                type="radio"
+                                id="not-sure"
+                                name="recommend"
+                            />
+                            <label for="not-sure">Not sure</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Like. -->
+                <div>
+                    <label for="like">
+                        What do you like most in our bootcamp:
+                    </label>
+                    <select id="like" name="like">
+                        <option disabled selected>Selecciona una opción</option>
+                        <option value="0">Teachers</option>
+                        <option value="1">Class dynamics</option>
+                        <option value="2">All</option>
+                    </select>
+                </div>
+
+                <!-- Improve. -->
+                <div>
+                    <p>Things that should be improved in the future:</p>
+                    <ul>
+                        <li>
+                            <input
+                                type="checkbox"
+                                id="front-end"
+                                name="front-end"
+                            />
+                            <label for="front-end">Front-end Projects</label>
+                        </li>
+                        <li>
+                            <input
+                                type="checkbox"
+                                id="back-end"
+                                name="back-end"
+                            />
+                            <label for="back">Back-end Projects</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="data" name="data" />
+                            <label for="data">Data Visualization</label>
+                        </li>
+                    </ul>
+                </div>
+                <button>Enviar</button>
+            </form>
+        </main>
+    </body>
+</html>
