@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Módulo HTML</title>
+    </head>
+    <body>
+        <header>
+            <h1>¡Bienvenidos a mi sitio web!</h1>
+        </header>
+        <main>
+            <section>
+                <h2>¿Qué es Aria?</h2>
+                <p>
+                    Con la finalidad de expresar aquella semántica que HTML no
+                    puede formular por su cuenta, surgen propuestas técnicas
+                    cada vez más especializadas que brindan patrones de
+                    semántica que no existen de forma nativa en HTML, tal es el
+                    caso de los atributos ARIA (Accessible Rich Internet
+                    Applications)
+                </p>
+                <p>
+                    Podemos definir ARIA (Accessible Rich Internet Applications)
+                    como un conjunto de características que complementan las
+                    capacidades del HTML, mediante el uso de atributos
+                    adicionales. El principal objetivo de ARIA es permitir que
+                    JavaScript pueda comunicar a las tecnologías asistivas, los
+                    cambios dinámicos que ocurran en la página. Las WAI-ARIA son
+                    parte de la iniciativa de accesibilidad web del W3C para
+                    potenciar la accesibilidad web.
+                </p>
+            </section>
+
+            <section>
+                <h2>Ejemplo aria-hidden / role</h2>
+
+                <section>
+                    <h3>Botón no accesible</h3>
+
+                    <!-- El siguiente código muestra un botón no accesible, ya que su contenido es un icono. -->
+                    <button name="favorite">
+                        <svg viewBox="0 0 10 10">
+                            <path d="M7 9L5 8 3 9V6L1 4h3l1-3 1 3h3L7 6z" />
+                        </svg>
+                    </button>
+                </section>
+
+                <section>
+                    <h3>Botón accesible</h3>
+
+                    <!-- Para hacerlo accesible, podemos añadir el atributo aria-hidden=”true” al <svg> y un texto que describa su función.  -->
+                    <button name="favorite">
+                        <svg aria-hidden="true" viewBox="0 0 10 10">
+                            <path d="M7 9L5 8 3 9V6L1 4h3l1-3 1 3h3L7 6z" />
+                        </svg>
+                        Añadir a favoritos
+                    </button>
+                </section>
+
+                <section>
+                    <h3>Roles Aria 1</h3>
+
+                    <!-- Los roles ARIA se añaden al marcado HTML como atributos. Definen el tipo de elemento y especifican la finalidad que tiene. -->
+                    <div role="alert">
+                        Por favor, actualiza la última versión de tu navegador
+                        para una mejor experiencia.
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Roles Aria 2</h3>
+
+                    <!-- El rol presentation es muy útil con elementos cuyo contenido no tiene sentido leer en voz alta. -->
+                    <ul role="presentation">
+                        <li>
+                            <a href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Link 3</a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; HACKABOSS 2023</p>
+        </footer>
+    </body>
+</html>
