@@ -1,0 +1,86 @@
+header {
+    background-color: rgb(84, 84, 84);
+}
+
+* {
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+header> nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+header > nav > ul > li {
+    display: inline-block;
+    list-style: none;
+    padding: 8px;
+}
+
+header > nav > ul {
+    padding: 15px;
+}
+
+header {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+img {
+    border: solid;
+    border-radius: 10px;
+    margin-left: 80px;
+}
+
+#colocarderecha {
+    padding: 20px;
+    text-align: center;
+}
+
+#parrafop {
+    padding: 30px;
+}
+
+#botonmain {
+    background-color: orange;
+    text-decoration: none;
+    border: solid;
+    border-radius: 10px;
+    color:white;
+    font-size: larger;
+    padding: 5px;
+
+}
+
+#mainflex {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(0, 0, 59);
+    padding: 50px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+#parrafofooter {
+    color: white;
+    padding: 20px;
+}
+
+#botonfooter {
+    background-color: orange;
+    text-decoration: none;
+    color:white;
+    font-size: larger;
+    padding: 5px;
+    border-radius: 10px;
+}
